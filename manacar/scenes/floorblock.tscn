@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://qvsthqwc74mq"]
+
+[ext_resource type="Texture2D" uid="uid://c2i1c8h1dli0q" path="res://images/grass_block.png" id="1_5gpye"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_fmnqk"]
+size = Vector2(839, 394)
+
+[node name="Floorblock" type="Node2D" unique_id=360183546]
+
+[node name="RigidBody2D" type="RigidBody2D" parent="." unique_id=2093554797]
+freeze = true
+
+[node name="Sprite2D" type="Sprite2D" parent="RigidBody2D" unique_id=1266054975]
+texture = ExtResource("1_5gpye")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="RigidBody2D" unique_id=858534251]
+position = Vector2(1.5, 23)
+shape = SubResource("RectangleShape2D_fmnqk")
