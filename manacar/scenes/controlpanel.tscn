@@ -1,155 +1,155 @@
 [gd_scene format=3 uid="uid://b0fgd3dkotnx8"]
 
-[ext_resource type="Script" uid="uid://cupetlfkv00vb" path="res://scenes/desk.gd" id="1_8atfi"]
-[ext_resource type="Texture2D" uid="uid://e84ycgdpb41x" path="res://images/schaltpult.png" id="1_e7kfv"]
-[ext_resource type="Texture2D" uid="uid://d3v6fopkraxe1" path="res://images/red_start.png" id="2_8atfi"]
-[ext_resource type="Texture2D" uid="uid://mciwgjfyuan4" path="res://images/green_auto.png" id="3_13rpe"]
-[ext_resource type="Texture2D" uid="uid://4ahxehmhb8qs" path="res://images/green_start.png" id="3_vxfw4"]
-[ext_resource type="Texture2D" uid="uid://3ie3sr4ehcqj" path="res://images/green_engine1.png" id="4_m05qt"]
-[ext_resource type="Texture2D" uid="uid://drmui8db3j8xw" path="res://images/green_engine2.png" id="5_f5bkq"]
-[ext_resource type="Script" uid="uid://vrcgu17kehro" path="res://scenes/audio_manager.gd" id="5_vxfw4"]
-[ext_resource type="Texture2D" uid="uid://cpf5ldo4xcul1" path="res://images/green_forward.png" id="6_r1m76"]
-[ext_resource type="Texture2D" uid="uid://ck0ylgdn6rs3w" path="res://images/green_high.png" id="7_rindq"]
-[ext_resource type="Texture2D" uid="uid://dtr165gorrf5g" path="res://images/green_jog.png" id="8_ohmsb"]
-[ext_resource type="Texture2D" uid="uid://dmiwdfky5txgo" path="res://images/green_low.png" id="9_23elp"]
-[ext_resource type="Texture2D" uid="uid://ost7h2iqcd6t" path="res://images/green_lower.png" id="10_b8kjh"]
-[ext_resource type="Texture2D" uid="uid://cactu8prdr2jf" path="res://images/green_man.png" id="11_xstgx"]
-[ext_resource type="Texture2D" uid="uid://c51suc1l6b73s" path="res://images/green_off.png" id="12_7pwe7"]
-[ext_resource type="Texture2D" uid="uid://bf33bkng66f8x" path="res://images/green_open2.png" id="13_nb151"]
-[ext_resource type="Texture2D" uid="uid://bp37jjvcx0wgo" path="res://images/green_open.png" id="14_yeg5g"]
-[ext_resource type="Texture2D" uid="uid://c6nsgxlxhegjn" path="res://images/green_raise.png" id="15_wqjro"]
-[ext_resource type="Texture2D" uid="uid://bdfflu4y1qr8x" path="res://images/green_reset.png" id="16_x14jd"]
-[ext_resource type="Texture2D" uid="uid://b377wf2wwjck8" path="res://images/green_run.png" id="17_4thss"]
-[ext_resource type="Texture2D" uid="uid://b6tigux8b0kfo" path="res://images/green_stop.png" id="18_s2su1"]
-[ext_resource type="Texture2D" uid="uid://4p8x3u3ygtxi" path="res://images/red_auto.png" id="19_34fnc"]
-[ext_resource type="Texture2D" uid="uid://bbydv2s02jwfs" path="res://images/red_engine1.png" id="20_47ub3"]
-[ext_resource type="Texture2D" uid="uid://drxji2i44hp5r" path="res://images/red_engine2.png" id="21_nhr53"]
-[ext_resource type="Texture2D" uid="uid://bpjxvnvcst573" path="res://images/red_forward.png" id="22_6bvht"]
-[ext_resource type="Texture2D" uid="uid://gm6ew4bs1og0" path="res://images/red_high.png" id="23_evst0"]
-[ext_resource type="Texture2D" uid="uid://cy0w4u58wnslp" path="res://images/red_jog.png" id="24_ffcck"]
-[ext_resource type="Texture2D" uid="uid://bfutk48p8bw3y" path="res://images/red_low.png" id="25_plarr"]
-[ext_resource type="Texture2D" uid="uid://c2x6qvfie5tx3" path="res://images/red_lower.png" id="26_1aaqs"]
-[ext_resource type="Texture2D" uid="uid://bn4o30h2r2hke" path="res://images/red_man.png" id="27_8trrf"]
-[ext_resource type="Texture2D" uid="uid://ki7nf1w5olhx" path="res://images/red_off.png" id="28_5dt8n"]
-[ext_resource type="Texture2D" uid="uid://dxw1wshyoidhg" path="res://images/red_open2.png" id="29_npv72"]
-[ext_resource type="Texture2D" uid="uid://jxvgfckadtns" path="res://images/red_open.png" id="30_jh87p"]
-[ext_resource type="Texture2D" uid="uid://bm7hx2ks5orql" path="res://images/red_raise.png" id="31_u2fjd"]
-[ext_resource type="Texture2D" uid="uid://siogn4qy81vi" path="res://images/red_reset.png" id="32_5vk4r"]
-[ext_resource type="Texture2D" uid="uid://db6l4jucncgvm" path="res://images/red_run.png" id="33_j5saa"]
-[ext_resource type="Texture2D" uid="uid://dg4crgkoun3ox" path="res://images/red_stop.png" id="34_gkh5m"]
+[ext_resource type="Script" uid="uid://cupetlfkv00vb" path="res://scripts/controlpanel.gd" id="1_6v8od"]
+[ext_resource type="Texture2D" uid="uid://e84ycgdpb41x" path="res://images/schaltpult.png" id="2_gwc5c"]
+[ext_resource type="Texture2D" uid="uid://4ahxehmhb8qs" path="res://images/green_start.png" id="3_7jbpk"]
+[ext_resource type="Texture2D" uid="uid://mciwgjfyuan4" path="res://images/green_auto.png" id="4_y8kin"]
+[ext_resource type="Texture2D" uid="uid://3ie3sr4ehcqj" path="res://images/green_engine1.png" id="5_6og6x"]
+[ext_resource type="Texture2D" uid="uid://drmui8db3j8xw" path="res://images/green_engine2.png" id="6_jf2r5"]
+[ext_resource type="Texture2D" uid="uid://cpf5ldo4xcul1" path="res://images/green_forward.png" id="7_ksuuu"]
+[ext_resource type="Texture2D" uid="uid://ck0ylgdn6rs3w" path="res://images/green_high.png" id="8_7p0b8"]
+[ext_resource type="Texture2D" uid="uid://dtr165gorrf5g" path="res://images/green_jog.png" id="9_kkfhs"]
+[ext_resource type="Texture2D" uid="uid://dmiwdfky5txgo" path="res://images/green_low.png" id="10_4ne5g"]
+[ext_resource type="Texture2D" uid="uid://ost7h2iqcd6t" path="res://images/green_lower.png" id="11_dp5g5"]
+[ext_resource type="Texture2D" uid="uid://cactu8prdr2jf" path="res://images/green_man.png" id="12_284j6"]
+[ext_resource type="Texture2D" uid="uid://c51suc1l6b73s" path="res://images/green_off.png" id="13_tnoo4"]
+[ext_resource type="Texture2D" uid="uid://bf33bkng66f8x" path="res://images/green_open2.png" id="14_dic6x"]
+[ext_resource type="Texture2D" uid="uid://bp37jjvcx0wgo" path="res://images/green_open.png" id="15_n65gn"]
+[ext_resource type="Texture2D" uid="uid://c6nsgxlxhegjn" path="res://images/green_raise.png" id="16_prr3c"]
+[ext_resource type="Texture2D" uid="uid://bdfflu4y1qr8x" path="res://images/green_reset.png" id="17_p0jq0"]
+[ext_resource type="Texture2D" uid="uid://b377wf2wwjck8" path="res://images/green_run.png" id="18_28vla"]
+[ext_resource type="Texture2D" uid="uid://b6tigux8b0kfo" path="res://images/green_stop.png" id="19_ahcbw"]
+[ext_resource type="Texture2D" uid="uid://d3v6fopkraxe1" path="res://images/red_start.png" id="20_36tgr"]
+[ext_resource type="Texture2D" uid="uid://4p8x3u3ygtxi" path="res://images/red_auto.png" id="21_78s25"]
+[ext_resource type="Texture2D" uid="uid://bbydv2s02jwfs" path="res://images/red_engine1.png" id="22_5jjyn"]
+[ext_resource type="Texture2D" uid="uid://drxji2i44hp5r" path="res://images/red_engine2.png" id="23_1m7yy"]
+[ext_resource type="Texture2D" uid="uid://bpjxvnvcst573" path="res://images/red_forward.png" id="24_kh8mb"]
+[ext_resource type="Texture2D" uid="uid://gm6ew4bs1og0" path="res://images/red_high.png" id="25_ngivq"]
+[ext_resource type="Texture2D" uid="uid://cy0w4u58wnslp" path="res://images/red_jog.png" id="26_3tf1e"]
+[ext_resource type="Texture2D" uid="uid://bfutk48p8bw3y" path="res://images/red_low.png" id="27_hfemt"]
+[ext_resource type="Texture2D" uid="uid://c2x6qvfie5tx3" path="res://images/red_lower.png" id="28_riy5q"]
+[ext_resource type="Texture2D" uid="uid://bn4o30h2r2hke" path="res://images/red_man.png" id="29_n7663"]
+[ext_resource type="Texture2D" uid="uid://ki7nf1w5olhx" path="res://images/red_off.png" id="30_hqsb2"]
+[ext_resource type="Texture2D" uid="uid://dxw1wshyoidhg" path="res://images/red_open2.png" id="31_fu43f"]
+[ext_resource type="Texture2D" uid="uid://jxvgfckadtns" path="res://images/red_open.png" id="32_1b3fi"]
+[ext_resource type="Texture2D" uid="uid://bm7hx2ks5orql" path="res://images/red_raise.png" id="33_rb1qc"]
+[ext_resource type="Texture2D" uid="uid://siogn4qy81vi" path="res://images/red_reset.png" id="34_4wy7a"]
+[ext_resource type="Texture2D" uid="uid://db6l4jucncgvm" path="res://images/red_run.png" id="35_3p0ih"]
+[ext_resource type="Texture2D" uid="uid://dg4crgkoun3ox" path="res://images/red_stop.png" id="36_s3gmj"]
+[ext_resource type="Script" uid="uid://vrcgu17kehro" path="res://scripts/audio_manager.gd" id="37_0l4ox"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_vxfw4"]
 radius = 41.01219
 
 [node name="Desk" type="Node2D" unique_id=792213223]
-script = ExtResource("1_8atfi")
+script = ExtResource("1_6v8od")
 
 [node name="TextureRect" type="Sprite2D" parent="." unique_id=1019685257]
-texture = ExtResource("1_e7kfv")
+texture = ExtResource("2_gwc5c")
 
 [node name="OverlayContainer" type="Node2D" parent="." unique_id=34912143]
 
 [node name="Start_green" type="Sprite2D" parent="OverlayContainer" unique_id=1902488290]
-texture = ExtResource("3_vxfw4")
+texture = ExtResource("3_7jbpk")
 
 [node name="Auto_green" type="Sprite2D" parent="OverlayContainer" unique_id=1201693594]
-texture = ExtResource("3_13rpe")
+texture = ExtResource("4_y8kin")
 
 [node name="Engine1_green" type="Sprite2D" parent="OverlayContainer" unique_id=674904227]
-texture = ExtResource("4_m05qt")
+texture = ExtResource("5_6og6x")
 
 [node name="Engine2_green" type="Sprite2D" parent="OverlayContainer" unique_id=994123670]
-texture = ExtResource("5_f5bkq")
+texture = ExtResource("6_jf2r5")
 
 [node name="Forward_green" type="Sprite2D" parent="OverlayContainer" unique_id=1450238929]
-texture = ExtResource("6_r1m76")
+texture = ExtResource("7_ksuuu")
 
 [node name="High_green" type="Sprite2D" parent="OverlayContainer" unique_id=2084639156]
-texture = ExtResource("7_rindq")
+texture = ExtResource("8_7p0b8")
 
 [node name="Jog_green" type="Sprite2D" parent="OverlayContainer" unique_id=1612289214]
-texture = ExtResource("8_ohmsb")
+texture = ExtResource("9_kkfhs")
 
 [node name="Low_green" type="Sprite2D" parent="OverlayContainer" unique_id=645476469]
-texture = ExtResource("9_23elp")
+texture = ExtResource("10_4ne5g")
 
 [node name="Lower_green" type="Sprite2D" parent="OverlayContainer" unique_id=1436813248]
-texture = ExtResource("10_b8kjh")
+texture = ExtResource("11_dp5g5")
 
 [node name="Man_green" type="Sprite2D" parent="OverlayContainer" unique_id=324673318]
-texture = ExtResource("11_xstgx")
+texture = ExtResource("12_284j6")
 
 [node name="Off_green" type="Sprite2D" parent="OverlayContainer" unique_id=105556085]
-texture = ExtResource("12_7pwe7")
+texture = ExtResource("13_tnoo4")
 
 [node name="Open2_green" type="Sprite2D" parent="OverlayContainer" unique_id=123401499]
-texture = ExtResource("13_nb151")
+texture = ExtResource("14_dic6x")
 
 [node name="Open_green" type="Sprite2D" parent="OverlayContainer" unique_id=1898177932]
-texture = ExtResource("14_yeg5g")
+texture = ExtResource("15_n65gn")
 
 [node name="Raise_green" type="Sprite2D" parent="OverlayContainer" unique_id=166490996]
-texture = ExtResource("15_wqjro")
+texture = ExtResource("16_prr3c")
 
 [node name="Reset_green" type="Sprite2D" parent="OverlayContainer" unique_id=431432612]
-texture = ExtResource("16_x14jd")
+texture = ExtResource("17_p0jq0")
 
 [node name="Run_green" type="Sprite2D" parent="OverlayContainer" unique_id=1086186660]
-texture = ExtResource("17_4thss")
+texture = ExtResource("18_28vla")
 
 [node name="Stop_green" type="Sprite2D" parent="OverlayContainer" unique_id=1148292582]
-texture = ExtResource("18_s2su1")
+texture = ExtResource("19_ahcbw")
 
 [node name="Start_red" type="Sprite2D" parent="OverlayContainer" unique_id=639568626]
-texture = ExtResource("2_8atfi")
+texture = ExtResource("20_36tgr")
 
 [node name="Auto_red" type="Sprite2D" parent="OverlayContainer" unique_id=887072107]
-texture = ExtResource("19_34fnc")
+texture = ExtResource("21_78s25")
 
 [node name="Engine1_red" type="Sprite2D" parent="OverlayContainer" unique_id=751860926]
-texture = ExtResource("20_47ub3")
+texture = ExtResource("22_5jjyn")
 
 [node name="Engine2_red" type="Sprite2D" parent="OverlayContainer" unique_id=1945157640]
-texture = ExtResource("21_nhr53")
+texture = ExtResource("23_1m7yy")
 
 [node name="Forward_red" type="Sprite2D" parent="OverlayContainer" unique_id=1549095025]
-texture = ExtResource("22_6bvht")
+texture = ExtResource("24_kh8mb")
 
 [node name="High_red" type="Sprite2D" parent="OverlayContainer" unique_id=2005113198]
-texture = ExtResource("23_evst0")
+texture = ExtResource("25_ngivq")
 
 [node name="Jog_red" type="Sprite2D" parent="OverlayContainer" unique_id=2062941022]
-texture = ExtResource("24_ffcck")
+texture = ExtResource("26_3tf1e")
 
 [node name="Low_red" type="Sprite2D" parent="OverlayContainer" unique_id=833472252]
-texture = ExtResource("25_plarr")
+texture = ExtResource("27_hfemt")
 
 [node name="Lower_red" type="Sprite2D" parent="OverlayContainer" unique_id=995467312]
-texture = ExtResource("26_1aaqs")
+texture = ExtResource("28_riy5q")
 
 [node name="Man_red" type="Sprite2D" parent="OverlayContainer" unique_id=1289455854]
-texture = ExtResource("27_8trrf")
+texture = ExtResource("29_n7663")
 
 [node name="Off_red" type="Sprite2D" parent="OverlayContainer" unique_id=1805184269]
-texture = ExtResource("28_5dt8n")
+texture = ExtResource("30_hqsb2")
 
 [node name="Open2_red" type="Sprite2D" parent="OverlayContainer" unique_id=468577582]
-texture = ExtResource("29_npv72")
+texture = ExtResource("31_fu43f")
 
 [node name="Open_red" type="Sprite2D" parent="OverlayContainer" unique_id=1072144053]
-texture = ExtResource("30_jh87p")
+texture = ExtResource("32_1b3fi")
 
 [node name="Raise_red" type="Sprite2D" parent="OverlayContainer" unique_id=513125736]
-texture = ExtResource("31_u2fjd")
+texture = ExtResource("33_rb1qc")
 
 [node name="Reset_red" type="Sprite2D" parent="OverlayContainer" unique_id=873607329]
-texture = ExtResource("32_5vk4r")
+texture = ExtResource("34_4wy7a")
 
 [node name="Run_red" type="Sprite2D" parent="OverlayContainer" unique_id=566117816]
-texture = ExtResource("33_j5saa")
+texture = ExtResource("35_3p0ih")
 
 [node name="Stop_red" type="Sprite2D" parent="OverlayContainer" unique_id=977817612]
-texture = ExtResource("34_gkh5m")
+texture = ExtResource("36_s3gmj")
 
 [node name="ButtonsArea" type="Node2D" parent="." unique_id=669712700]
 
@@ -258,7 +258,7 @@ shape = SubResource("CircleShape2D_vxfw4")
 [node name="Node2D" type="Node2D" parent="." unique_id=40136225]
 
 [node name="AudioManager" type="Node2D" parent="Node2D" unique_id=712439901]
-script = ExtResource("5_vxfw4")
+script = ExtResource("37_0l4ox")
 
 [node name="PlayerUI" type="AudioStreamPlayer2D" parent="Node2D/AudioManager" unique_id=1259158259]
 

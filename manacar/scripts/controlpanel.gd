@@ -2,6 +2,10 @@ extends Node2D
 
 @onready var audio = $Node2D/AudioManager
 
+# Wird nur emitted wenn die Anzeige angepasst wird. 
+signal button_state_changed()
+
+
 # --- Enum für alle möglichen Zustände ---
 enum ButtonState { OFF, GREEN, RED }
 
@@ -105,7 +109,8 @@ const BUTTON_CONFIG = {
 		"area": "Run"
 	},
 	"Stop": {
-		ButtonState.OFF:   [],                          # kein Overlay sichtbar
+		ButtonState.OFF:   [],   
+		ButtonState.GREEN: ["Stop_green"],              # kein Overlay sichtbar
 		ButtonState.RED:   ["Stop_red"],
 		"area": "Stop"
 	},
@@ -141,7 +146,7 @@ func _can_activate(btn_name: String) -> bool:
 	# Beispiel: button_03 nur aktivierbar wenn button_01 grün ist
 	if btn_name == "Start":
 		return button_states["Start"] == ButtonState.OFF
-	if btn_name == "Off":
+	if btn_name == "Engine1":
 		return button_states["Start"] == ButtonState.GREEN
 	return true
 
@@ -160,7 +165,13 @@ func _cycle_state(btn_name: String) -> void:
 	_apply_state(btn_name)
 	print("Button '%s' → %s" % [btn_name, ButtonState.keys()[next]])
 
+func set_button(btn_name: String, state: ButtonState) -> void:
+	button_states[btn_name] = state
+	_apply_state(btn_name)
+	#_play_sound_for_state(btn_name, state)
+
 func _apply_state(btn_name: String) -> void:
+	
 	var config = BUTTON_CONFIG[btn_name]
 	var active_overlays: Array = config.get(button_states[btn_name], [])
 
@@ -176,3 +187,5 @@ func _apply_state(btn_name: String) -> void:
 		var node = $OverlayContainer.get_node_or_null(overlay_name)
 		if node:
 			node.visible = true
+			
+	button_state_changed.emit(btn_name, button_states[btn_name])

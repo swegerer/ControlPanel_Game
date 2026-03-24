@@ -1,8 +1,10 @@
 [gd_scene format=3 uid="uid://thp33uh3ar5p"]
 
+[ext_resource type="Script" uid="uid://bed7j86fyapur" path="res://scripts/shuttle.gd" id="1_8r8kg"]
 [ext_resource type="Texture2D" uid="uid://bti67pyc1iqg6" path="res://images/casing.png" id="1_88qne"]
 [ext_resource type="Texture2D" uid="uid://lhbiwhmsevnt" path="res://images/tire.png" id="2_8l71w"]
-[ext_resource type="PackedScene" uid="uid://b0fgd3dkotnx8" path="res://scenes/desk.tscn" id="3_8l71w"]
+[ext_resource type="Script" uid="uid://dsnrxkagpfv71" path="res://scripts/vehicle.gd" id="2_tg3uw"]
+[ext_resource type="PackedScene" uid="uid://b0fgd3dkotnx8" path="res://scenes/controlpanel.tscn" id="3_8l71w"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_8r8kg"]
 size = Vector2(470, 545)
@@ -14,63 +16,65 @@ radius = 64.00781
 radius = 64.00781
 
 [node name="Shuttle" type="Node2D" unique_id=1081992667]
+script = ExtResource("1_8r8kg")
 
-[node name="display" type="Node2D" parent="." unique_id=1587142284]
+[node name="Vehicle" type="Node2D" parent="." unique_id=1587142284]
+script = ExtResource("2_tg3uw")
 
-[node name="case" type="Node2D" parent="display" unique_id=272499332]
+[node name="case" type="Node2D" parent="Vehicle" unique_id=272499332]
 
-[node name="RigidBody2D" type="RigidBody2D" parent="display/case" unique_id=1791319219]
+[node name="RigidBody2D" type="RigidBody2D" parent="Vehicle/case" unique_id=1791319219]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="display/case/RigidBody2D" unique_id=363196523]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Vehicle/case/RigidBody2D" unique_id=363196523]
 position = Vector2(609, 451.5)
 shape = SubResource("RectangleShape2D_8r8kg")
 
-[node name="Sprite2D" type="Sprite2D" parent="display/case/RigidBody2D" unique_id=1671527245]
+[node name="Sprite2D" type="Sprite2D" parent="Vehicle/case/RigidBody2D" unique_id=1671527245]
 position = Vector2(609, 450.35083)
 rotation = 1.5707964
 scale = Vector2(0.6351206, 1)
 texture = ExtResource("1_88qne")
 
-[node name="Camera2D" type="Camera2D" parent="display/case/RigidBody2D" unique_id=2045019668]
+[node name="Camera2D" type="Camera2D" parent="Vehicle/case/RigidBody2D" unique_id=2045019668]
 position = Vector2(608, 473)
 zoom = Vector2(0.3, 0.3)
 position_smoothing_enabled = true
 
-[node name="frontwheel" type="Node2D" parent="display" unique_id=1502054483]
+[node name="frontwheel" type="Node2D" parent="Vehicle" unique_id=1502054483]
 
-[node name="RigidBody2D" type="RigidBody2D" parent="display/frontwheel" unique_id=1874267323]
+[node name="RigidBody2D" type="RigidBody2D" parent="Vehicle/frontwheel" unique_id=1874267323]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="display/frontwheel/RigidBody2D" unique_id=1187020010]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Vehicle/frontwheel/RigidBody2D" unique_id=1187020010]
 position = Vector2(835, 716)
 shape = SubResource("CircleShape2D_88qne")
 
-[node name="Sprite2D" type="Sprite2D" parent="display/frontwheel/RigidBody2D" unique_id=1952626703]
+[node name="Sprite2D" type="Sprite2D" parent="Vehicle/frontwheel/RigidBody2D" unique_id=1952626703]
 position = Vector2(835, 716)
 scale = Vector2(0.4175, 0.43)
 texture = ExtResource("2_8l71w")
 
-[node name="backwheel" type="Node2D" parent="display" unique_id=1443134607]
+[node name="backwheel" type="Node2D" parent="Vehicle" unique_id=1443134607]
 
-[node name="RigidBody2D" type="RigidBody2D" parent="display/backwheel" unique_id=1098387611]
+[node name="RigidBody2D" type="RigidBody2D" parent="Vehicle/backwheel" unique_id=1098387611]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="display/backwheel/RigidBody2D" unique_id=1372564980]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Vehicle/backwheel/RigidBody2D" unique_id=1372564980]
 position = Vector2(375, 716)
 shape = SubResource("CircleShape2D_8l71w")
 
-[node name="Sprite2D" type="Sprite2D" parent="display/backwheel/RigidBody2D" unique_id=1210019941]
+[node name="Sprite2D" type="Sprite2D" parent="Vehicle/backwheel/RigidBody2D" unique_id=1210019941]
 position = Vector2(375, 716)
 scale = Vector2(0.4175, 0.43)
 texture = ExtResource("2_8l71w")
 
-[node name="PinJoint_front" type="PinJoint2D" parent="display" unique_id=1724547490]
+[node name="PinJoint_front" type="PinJoint2D" parent="Vehicle" unique_id=1724547490]
 position = Vector2(834, 722)
 node_a = NodePath("../case/RigidBody2D")
 node_b = NodePath("../frontwheel/RigidBody2D")
 
-[node name="PinJoint_back" type="PinJoint2D" parent="display" unique_id=993015430]
+[node name="PinJoint_back" type="PinJoint2D" parent="Vehicle" unique_id=993015430]
 position = Vector2(375, 718)
 node_a = NodePath("../case/RigidBody2D")
 node_b = NodePath("../backwheel/RigidBody2D")
 
-[node name="Desk" parent="." unique_id=792213223 instance=ExtResource("3_8l71w")]
+[node name="Controlpanel" parent="." unique_id=792213223 instance=ExtResource("3_8l71w")]
 position = Vector2(-276, -535)
