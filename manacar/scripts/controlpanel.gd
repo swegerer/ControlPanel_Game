@@ -146,6 +146,7 @@ func _can_activate(btn_name: String) -> bool:
 	# Beispiel: button_03 nur aktivierbar wenn button_01 grün ist
 	if btn_name == "Start":
 		return button_states["Start"] == ButtonState.OFF
+
 	if btn_name == "Engine1":
 		return button_states["Start"] == ButtonState.GREEN
 	return true
@@ -155,11 +156,7 @@ func _cycle_state(btn_name: String) -> void:
 	# Zyklus: OFF → GREEN → RED → OFF
 	var next = (current + 1) % ButtonState.size()
 	
-	if btn_name == "Off" and button_states["Start"] == ButtonState.GREEN:
-		return
-	else:
-		button_states["Start"] = ButtonState.OFF
-		button_states[btn_name] = next
+	button_states[btn_name] = next
 		
 	audio.play("engine_start")
 	_apply_state(btn_name)

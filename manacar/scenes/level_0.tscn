@@ -1,12 +1,21 @@
 [gd_scene format=3 uid="uid://cxt4clgndh46m"]
 
 [ext_resource type="PackedScene" uid="uid://qvsthqwc74mq" path="res://scenes/floorblock.tscn" id="1_5uqbp"]
+[ext_resource type="PackedScene" uid="uid://bs52eke6helxw" path="res://scenes/muggle_01_block.tscn" id="1_rerym"]
 [ext_resource type="PackedScene" uid="uid://thp33uh3ar5p" path="res://scenes/shuttle.tscn" id="2_rerym"]
 
 [node name="Level0" type="Node2D" unique_id=1229557499]
 
+[node name="muggle_01block" parent="." unique_id=1112381208 instance=ExtResource("1_rerym")]
+position = Vector2(-107, 4)
+
 [node name="Floorblock" parent="." unique_id=360183546 instance=ExtResource("1_5uqbp")]
-position = Vector2(425, 632)
+position = Vector2(-2495, 656)
+scale = Vector2(24.52, 1)
 
 [node name="Shuttle" parent="." unique_id=1081992667 instance=ExtResource("2_rerym")]
 position = Vector2(-199, -395)
+
+[node name="muggle_01block2" parent="." unique_id=1724457623 instance=ExtResource("1_rerym")]
+position = Vector2(3292, -70)
+scale = Vector2(2, 1.0399998)

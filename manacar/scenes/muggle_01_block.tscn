@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://bs52eke6helxw"]
+
+[ext_resource type="Texture2D" uid="uid://dtxdxjmqsyn0o" path="res://images/muggle_01.png" id="1_m8gvh"]
+
+[node name="muggle_01block" type="Node2D" unique_id=1112381208]
+
+[node name="RigidBody2D" type="RigidBody2D" parent="." unique_id=576541278]
+
+[node name="Sprite2D" type="Sprite2D" parent="RigidBody2D" unique_id=307418884]
+texture = ExtResource("1_m8gvh")
+
+[node name="CollisionShape2D" type="CollisionPolygon2D" parent="RigidBody2D" unique_id=1826550318]
+position = Vector2(-1, 258)
+polygon = PackedVector2Array(42, 4, 105, 3, 136, 31, 186, 51, 213, 65, 245, 71, 308, 63, 340, 80, 386, 76, 416, 70, 518, 69, 567, 69, 591, 84, 648, 103, 683, 118, 715, 124, 741, 141, 761, 159, 802, 168, 818, 185, 853, 193, 876, 206, 961, 225, 1047, 280, -1084, 283, -959, 231, -904, 199, -894, 183, -849, 183, -823, 183, -798, 159, -763, 134, -744, 114, -715, 94, -709, 74, -678, 63, -663, 63, -624, 40, -589, 33, -548, 30, -522, 43, -483, 44, -414, 45, -380, 41, -309, 28, -270, 18, -235, 15, -210, 5, -152, -1, -77, 0)
